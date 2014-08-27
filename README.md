@@ -6,3 +6,5 @@ parquet
 
 the main purpouse of this project is to extract parquet parser from impala code.
 the 2nd purpouse is to port it to zerovm platfrom
+
+the code is heavily under development and is not even compiling.

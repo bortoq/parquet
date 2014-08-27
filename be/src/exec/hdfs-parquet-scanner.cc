@@ -15,7 +15,7 @@
 #include "exec/hdfs-parquet-scanner.h"
 
 #include <boost/algorithm/string.hpp>
-#include <gutil/strings/substitute.h>
+//#include <gutil/strings/substitute.h>
 
 #include "common/object-pool.h"
 #include "exec/hdfs-scan-node.h"
@@ -43,7 +43,7 @@ using namespace std;
 using namespace boost;
 using namespace boost::algorithm;
 using namespace impala;
-using namespace strings;
+//using namespace strings;
 
 Status HdfsParquetScanner::IssueInitialRanges(HdfsScanNode* scan_node,
     const std::vector<HdfsFileDesc*>& files) {

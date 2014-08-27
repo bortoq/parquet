@@ -1,0 +1,8 @@
+find . -name '*.*' | xargs grep "#include" > ~/temp/includes.txt
+// clean "includes.txt" from lines with <> includes, extra part #include " e.t.c.
+// sort
+uniq ~/temp/includes.txt ~/temp/includes2.txt
+// remove subfolder from pathes
+rar a -r z @/home/bortoq/temp/includes.txt
+
+cc hdfs-parquet-scanner.cc -DIR_COMPILE=1 -I.. -I/home/bortoq/temp/parquet/thirdparty/glog-0.3.2/src/windows/ -I/home/bortoq/temp/impala/thirdparty/gflags-2.0/src/ -I/home/bortoq/temp/impala/be/generated-sources/ -I/home/bortoq/temp/impala/thirdparty/thrift-0.9.0/lib/cpp/src/ -I/home/bortoq/temp/impala/thirdparty/ -I/home/bortoq/temp/impala/be/src/common/ -I/home/bortoq/temp/parquet/be/src/common/

@@ -1,0 +1,5 @@
+3rd party projects need to be ported to zerovm before porting parquet
+
+boost
+thrift
+

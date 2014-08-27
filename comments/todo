@@ -1,0 +1,8 @@
+what should be done to parquet as part of impala project
+
+- extract source code of parquet parser
+- add dependencies (3rd party code). could (should?) be extracted from
+  impala
+- get it compiled under host (>= ubuntu 12.04)
+- get it compiled under zerovm (version 2)
+

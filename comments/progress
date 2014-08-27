@@ -1,0 +1,14 @@
+progress in "parquet" project
+
+things to remove from sources:
+hdfs (hadoop file system)
+usage of java (there are calls from thrift)
+extra dependencies temporarily taken to make parquet compiled
+
++- extract important parts of parquet from impala project
++- remove needless code from extracted parquet sources
+- rewrite parquet code removing usage of hdfs
+- find tests (at least 1 parquet file) to test parquet parser
+- get x86_64 object code of parquet parser
+- get zerovm object code of parquet parser
+
